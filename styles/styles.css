@@ -24,6 +24,7 @@ general rules
 /*general rules*/
 :root {
     --blue: #2196F3;
+    --blue-hover:#188ce8; 
     --portfolio-bg-blue: rgba(33, 150, 243, 0.9);
     --white: #ffffff;
     --black-text: #212121;
@@ -315,7 +316,7 @@ margin-left: 93px;
     
 }
 .buttom-send{
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     background: var(--blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -327,7 +328,17 @@ margin-left: 93px;
     justify-content: center;
     margin-left: 12px;
     border: none;
+    transition: var(--hover-time);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    cursor: pointer;
+    border: transparent;
 }
+.buttom-send:hover{
+    background-color: var(--blue-hover);
+}
+
 .send-svg{
     width: 24px;
     height: 24px;
@@ -393,6 +404,9 @@ margin-left: 93px;
     line-height: 30px;
     align-items: center;
     text-align: center;
+}
+.banner .btn:hover{
+    background-color: var(--blue-hover);
 }
 /* 3.2 index our benefits*/
 .disappering_title{
@@ -741,6 +755,7 @@ margin-top: var(--card-set-gap);
 
 .card:hover .card-action {
     transform: translateY(110px);
+    transition: var(--hover-time);
 }
 
 
@@ -835,7 +850,8 @@ a .social-networks__icon {
 }
 
 .close-modal__icon:hover{
-fill: var(--blue);
+    fill: var(--blue);
+    transition: var(--hover-time);
 }
 .close-modal__icon{
     width: 30px;
@@ -875,7 +891,7 @@ label p{
 .input-area:hover, .coments:hover{
     cursor: pointer;
     border-color: var(--blue);
-
+    transition: var(--hover-time);
 }
 .coments{
     width: 100%;
@@ -884,6 +900,8 @@ label p{
     border-radius: 4px;
     outline: transparent;
     margin-top: 4px;
+    resize: none;
+    padding: 12px 16px;
 }
 .form-field{
     position: relative;
@@ -903,6 +921,7 @@ label p{
 
 .input-area:hover + .modal_icon{
     fill: #2196f3;
+    transition: var(--hover-time);
 }
 .checkbox{
     margin: 20px 11px 30px 36px;
@@ -929,7 +948,7 @@ label p{
     border-radius: 2px;
     margin-right: 8px;
     cursor: pointer;
-    bottom: 119px;
+    bottom: 108px;
 }
 .checkbox-vector{
     width: 13px;
@@ -941,13 +960,19 @@ label p{
 .checkbox:hover .checkbox-bg{
     background-color: var(--blue);
     border: 2px solid var(--blue);
+    transition: var(--hover-time);
 }
-.checkbox-bg:hover{color: #2196F3;
-    background-color: #2196F3;}
+.checkbox-bg:hover{
+    color: #2196F3;
+    background-color: #2196F3;
+    transition: var(--hover-time);
+}
 
 .checkbox_origin:checked ~ .checkbox-bg{
     background-color: var(--blue);
-    border: 2px solid var(--blue);}
+    border: 2px solid var(--blue);
+    transition: var(--hover-time);
+}
 
 .modal-btn-send{
     width: 200px;
@@ -962,7 +987,6 @@ label p{
 
     font-weight: 700;
     font-size: 16px;
-
 
     display: flex;
     align-items: center;
