@@ -929,7 +929,7 @@ label p{
     transition: var(--hover-time);
 }
 .checkbox{
-    margin: 20px 11px 30px 36px;
+    margin: 20px 0px 30px 36px;
     display: block;
 }
 .checkbox_origin{
@@ -979,9 +979,12 @@ label p{
     transition: var(--hover-time);
 }
 
-.terms{
+.agreements{
     color: var(--blue);
     cursor: pointer;
+    margin-left: 4px;
+    text-decoration: underline;
+
 }
 
 .modal-btn-send{
