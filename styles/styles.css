@@ -221,7 +221,7 @@ footer address ul li a{
     margin-top: 9px;    
 }
 
-footer address ul li a span {
+footer address ul li span a{
     color: var(--white);
 }
 footer address ul{
@@ -308,7 +308,7 @@ margin-left: 93px;
     border-radius: 4px;
     outline: transparent;
     background-color: var(--bg-color);
-
+    padding: 15px 16px;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -835,7 +835,7 @@ a .social-networks__icon {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 8px 8px 40px 41px;
+    padding: 40px;
 
 }
 
@@ -864,17 +864,21 @@ a .social-networks__icon {
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 8px;
+    top: 8px;
 }
-.modal h2{
+.modal p{
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.03em;
+    margin-bottom: 12px;
 }
-.modal-menu{
+/* .modal-menu{
     margin: 12px 31px 0px 0px;
 
-}
+} */
 label p{
     margin-bottom: 4px;
 }
@@ -888,7 +892,7 @@ label p{
     margin-bottom: 10px;
     margin-top: 4px;
 }
-.input-area:hover, .coments:hover{
+.input-area:hover, .coments:hover, .input-area:focus, .coments:focus{
     cursor: pointer;
     border-color: var(--blue);
     transition: var(--hover-time);
@@ -905,6 +909,7 @@ label p{
 }
 .form-field{
     position: relative;
+    color: var(--gray-text);
 }
 .modal_icon{
     position: absolute;
@@ -919,7 +924,7 @@ label p{
     fill: currentColor;
 } */
 
-.input-area:hover + .modal_icon{
+.input-area:hover + .modal_icon, .input-area:focus + .modal_icon{
     fill: #2196f3;
     transition: var(--hover-time);
 }
@@ -948,7 +953,7 @@ label p{
     border-radius: 2px;
     margin-right: 8px;
     cursor: pointer;
-    bottom: 108px;
+    bottom: 116px;
 }
 .checkbox-vector{
     width: 13px;
@@ -957,21 +962,26 @@ label p{
     position: absolute;
 
 }
-.checkbox:hover .checkbox-bg{
+/* .checkbox:hover .checkbox-bg, .checkbox:focus .checkbox-bg{
     background-color: var(--blue);
     border: 2px solid var(--blue);
     transition: var(--hover-time);
-}
-.checkbox-bg:hover{
+} */
+/* .checkbox-bg:hover{
     color: #2196F3;
     background-color: #2196F3;
     transition: var(--hover-time);
-}
+} */
 
 .checkbox_origin:checked ~ .checkbox-bg{
     background-color: var(--blue);
     border: 2px solid var(--blue);
     transition: var(--hover-time);
+}
+
+.terms{
+    color: var(--blue);
+    cursor: pointer;
 }
 
 .modal-btn-send{
