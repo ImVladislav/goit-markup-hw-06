@@ -261,9 +261,7 @@ footer .social-networks-footer ul{
 .social-networks-item{
     width: 44px;
     height: 44px;
-    /* padding: 12px; */
     border-radius: 50%;
-    /* margin-right: 10px; */
     cursor: pointer;
     background-size: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -283,10 +281,9 @@ footer .social-networks-footer ul{
 .social-networks-item:hover, .social-networks-item:focus{
     background-color: #2196F3;
     transition: var(--hover-time);
-
 }
 .join-us{
-margin-left: 93px;
+margin-left: auto;
 }
 .input-block{
     display: flex;
@@ -313,7 +310,6 @@ margin-left: 93px;
     font-size: 16px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    
 }
 .buttom-send{
     min-width: 200px;
@@ -338,17 +334,12 @@ margin-left: 93px;
 .buttom-send:hover{
     background-color: var(--blue-hover);
 }
-
 .send-svg{
     width: 24px;
     height: 24px;
     fill: var(--white);
     margin-left: 10px;
 }
-
-
-
-
 
 /* 3 index/*
 
@@ -546,15 +537,12 @@ margin-left: 93px;
     padding: 30px 32px 30px 32px;
 }
 
-
-
 .all-img{
 position: relative;
 display: flex;
 align-items: center;
 justify-content: center;
 }
-
 
 .img-description{
     position: absolute;
@@ -569,10 +557,6 @@ justify-content: center;
     justify-content: center;
     align-items: center;
 }
-
-
-
-
 
 /* 3.4 index regular customer */
 .regular-customers  h2{
@@ -733,35 +717,28 @@ margin-top: var(--card-set-gap);
 }
 
 .card-action {
-        position: absolute;
-        display: block;
-        bottom: 0;
-        left: 0;
-        width: 370px;
-        height: 414px;
-        padding: 63px 24px;
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: 0.03em;
-        color: var(--white);
-        background-color : var(--portfolio-bg-blue);
-        background-size: 100%;
-
-        transform: translateY(415px);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 414px;
+    padding: 63px 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    background-color : var(--portfolio-bg-blue);
+    background-size: 100%;
+    transform: translateY(415px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
 .card:hover .card-action {
     transform: translateY(110px);
     transition: var(--hover-time);
 }
-
-
-
-
-
 .item:hover, .item:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: var(--hover-time);
@@ -778,7 +755,6 @@ a .social-networks__icon {
     width: 20px;
     height: 20px;
 }
-
 .social-networks a{
     width: 44px;
     height: 44px;
@@ -790,9 +766,7 @@ a .social-networks__icon {
     background-color: var(--white);
 }
 .social-networks-item{
-
     background-color: rgba(255, 255, 255, 0.1);
-
 }
 .social-networks a:last-child{
     margin-right: 0px;
@@ -808,7 +782,7 @@ a .social-networks__icon {
     transition: var(--hover-time);
 }
 
-/* js test */
+/* js */
 
 .backdrop{
     position: fixed;
@@ -826,7 +800,6 @@ a .social-networks__icon {
     opacity: 0;
     pointer-events: none;
 }
-
 .modal{
     height: 581px;
     width: 528px;
@@ -838,7 +811,6 @@ a .social-networks__icon {
     padding: 40px;
 
 }
-
 .close-btn{
     display: flex;
     margin-left: auto;
@@ -848,7 +820,6 @@ a .social-networks__icon {
     cursor: pointer;
     color: var(--white);
 }
-
 .close-modal__icon:hover{
     fill: var(--blue);
     transition: var(--hover-time);
@@ -875,10 +846,6 @@ a .social-networks__icon {
     letter-spacing: 0.03em;
     margin-bottom: 12px;
 }
-/* .modal-menu{
-    margin: 12px 31px 0px 0px;
-
-} */
 label p{
     margin-bottom: 4px;
 }
@@ -910,6 +877,9 @@ label p{
 .form-field{
     position: relative;
     color: var(--gray-text);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
 }
 .modal_icon{
     position: absolute;
@@ -917,13 +887,7 @@ label p{
     height: 18px;
     left: 15px;
     top: 31px;
-    /* height: 100%;
-    transform: translateX(-50%); */
 }
-/* .modal_icon:focus-visible{
-    fill: currentColor;
-} */
-
 .input-area:hover + .modal_icon, .input-area:focus + .modal_icon{
     fill: #2196f3;
     transition: var(--hover-time);
@@ -936,11 +900,8 @@ label p{
     visibility: hidden;
     width: 17px;
     height: 17px;
-    /* -webkit-appearance: none; */
     position: absolute;
     left: 34px;
-    /* opacity: 0.1; */
-    /* display: contents; */
 }
 .checkbox-bg{
     width: 16px;
@@ -960,33 +921,18 @@ label p{
     height: 12px;
     left: 0px;
     position: absolute;
-
 }
-/* .checkbox:hover .checkbox-bg, .checkbox:focus .checkbox-bg{
-    background-color: var(--blue);
-    border: 2px solid var(--blue);
-    transition: var(--hover-time);
-} */
-/* .checkbox-bg:hover{
-    color: #2196F3;
-    background-color: #2196F3;
-    transition: var(--hover-time);
-} */
-
 .checkbox_origin:checked ~ .checkbox-bg{
     background-color: var(--blue);
     border: 2px solid var(--blue);
     transition: var(--hover-time);
 }
-
 .agreements{
     color: var(--blue);
     cursor: pointer;
     margin-left: 4px;
     text-decoration: underline;
-
 }
-
 .modal-btn-send{
     width: 200px;
     height: 50px;
@@ -997,13 +943,10 @@ label p{
     border: none;
     cursor: pointer;
     justify-content: center;
-
     font-weight: 700;
     font-size: 16px;
-
     display: flex;
     align-items: center;
-
     letter-spacing: 0.06em;
     margin: auto;
 }
